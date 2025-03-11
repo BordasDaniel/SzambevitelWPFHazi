@@ -1,0 +1,22 @@
+﻿<Window x:Class="SzambevitelWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SzambevitelWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="250">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="413*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="txtSzam" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" Text="0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSzam" Content="Generál" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="120" Click="btnSzam_Click"/>
+        <RadioButton x:Name="rdbtJeloltIgaz" Content="Jelölt" HorizontalAlignment="Left" Margin="165,14,0,0" VerticalAlignment="Top" Checked="rdbtSzam_Checked"/>
+        <RadioButton x:Name="rdbtJeloltHamis" Content="Jelöletlen" HorizontalAlignment="Left" Margin="165,39,0,0" VerticalAlignment="Top" Checked="rdbtSzam_Checked"/>
+
+    </Grid>
+</Window>
