@@ -13,7 +13,7 @@
         </Grid.RowDefinitions>
 
         <Button x:Name="btnSzam" Content="Generál" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" Width="120" Click="Generalas"/>
-        <RadioButton x:Name="rdbtJelolt" Content="Jelölt" HorizontalAlignment="Left" Margin="165,24,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbtJelolt" Content="Jelölt" HorizontalAlignment="Left" Margin="165,24,0,0" VerticalAlignment="Top" IsChecked="True"/>
         <RadioButton x:Name="rdbtJeloletlen" Content="Jelöletlen" HorizontalAlignment="Left" Margin="165,49,0,0" VerticalAlignment="Top"/>
 
         <StackPanel x:Name="stckpnlKontener" Grid.Row="1" HorizontalAlignment="Left" Height="Auto" Margin="10,10,0,0" VerticalAlignment="Top" Width="Auto"/>

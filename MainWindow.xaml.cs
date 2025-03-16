@@ -39,22 +39,7 @@ namespace SzambevitelWPF
 
         void HozzaAd(int db)
         {
-            bool VanJelolt()
-            {
-                switch(rdbtJelolt.IsChecked)
-                {
-                    case true:
-                        return true;
-                }
-                if (rdbtJeloletlen.IsChecked == false)
-                {
-                    rdbtJeloletlen.IsChecked = true;
-                    return false;
-                }
-                return false;
-            }
-
-            bool jelolt = VanJelolt();
+            bool jelolt = rdbtJelolt.IsChecked == true;
 
             for (int i = 0; i < db; i++)
             {
@@ -71,9 +56,15 @@ namespace SzambevitelWPF
 
         private void Generalas(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(txtSzam.Text) || txtSzam.Text == "0")
+            if (string.IsNullOrEmpty(txtSzam.Text))
             {
                 MessageBox.Show("Nem adtál meg számot!");
+                return;
+            }
+
+            if (txtSzam.Text == "0")
+            {
+                MessageBox.Show("A szám nem lehet nulla!");
                 return;
             }
             
